@@ -2,11 +2,17 @@ import { ExternalLink } from '@tamagui/lucide-icons'
 import { Anchor, H2, Paragraph, XStack, YStack } from 'tamagui'
 import { ToastControl } from 'components/CurrentToast'
 import ThemeControl from 'components/ThemeControl'
+import { LanguageSwitch } from 'components/LanguageSwitch'
+import { useLanguage } from 'components/i18n/LanguageProvider'
 
 export default function TabOneScreen() {
+    const { t } = useLanguage()
+
   return (
     <YStack flex={1} items="center" gap="$8" px="$10" pt="$5" bg="$background">
-  <H2>Tamagui + Expo</H2>
+  <H2>{t('app.title')}</H2>
+
+  <LanguageSwitch />
 
   <ThemeControl />
 
