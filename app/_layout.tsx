@@ -64,10 +64,10 @@ function RootLayoutNav() {
           }}
         />
 
-        <Stack.Screen
+        {/* <Stack.Screen
           name="modal"
           options={{
-            title: 'Tamagui + Expo',
+            title: 'SarbaLink',
             presentation: 'modal',
             animation: 'slide_from_right',
             gestureEnabled: true,
@@ -76,7 +76,7 @@ function RootLayoutNav() {
               backgroundColor: theme.background.val,
             },
           }}
-        />
+        /> */}
       </Stack>
     </ThemeProvider>
   )
